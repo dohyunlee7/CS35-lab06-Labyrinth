@@ -1,0 +1,78 @@
+% This LaTeX file contains your written lab questions.  You may answer these
+% questions just by inserting your answer into this document.
+%
+% If you're unfamiliar with LaTeX, see the document LearningLaTeX.tex in this
+% same directory.  It contains a brief explanation and a few snippets of LaTeX
+% code to get you started; in fact, it should have everything you need to
+% complete this assignment.
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{algpseudocode}
+\usepackage{algorithmicx}
+\usepackage{enumerate}
+
+\newtheorem{claim}{Claim}
+
+\begin{document}
+    \section{Inductive Proofs}
+
+    Prove each of the following claims by induction
+
+    \begin{claim}
+      The sum of the first $n$ even numbers is $n^2+n$.  That is, $\sum\limits_{i=1}^n (2i) = n^2+n$
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      $\sum\limits_{i=1}^{n} \dfrac{2}{3^i} = 1 - \dfrac{1}{3^n}$
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \begin{claim}
+      For every $n \geq 1$, $5^n - 1$ is divisible by $4$.  In other words, for every $n \geq 1$, there exists some integer constant $z_n$ such that $5^n - 1 = 4z_n$.  Note that each power of $5$ has a different $z$.
+    \end{claim}
+
+      %%%%%%%%%%%%%%
+      %%%% TODO %%%%
+      %%%%%%%%%%%%%%
+      % Write your proof of the above statement here.
+
+
+    \vspace{1cm}
+    \section{Recursive Invariants}
+
+    The function \texttt{minPos}, given below in pseudocode, takes as input an array $A$ of size $n$ numbers and returns the smallest \text{positive} number in the array.  If no positive numbers appear in the array, it returns zero.  (Note that zero is neither positive nor negative.)  Using induction, prove that the \texttt{minPos} function works correctly.  Clearly state your recursive invariant at the beginning of your proof.
+
+    \begin{verbatim}
+Function minPos(A,n)
+  If n = 0 Then
+    Return 0
+  Else
+    best <- minPos(A,n-1)
+    If A[n-1] < best And A[n-1] > 0 Then
+      best <- A[n-1]
+    EndIf
+    Return best
+  EndIf
+EndFunction
+    \end{verbatim}
+
+    %%%%%%%%%%%%%%
+    %%%% TODO %%%%
+    %%%%%%%%%%%%%%
+    % Give your recursive invariant and your proof here.
+
+\end{document}

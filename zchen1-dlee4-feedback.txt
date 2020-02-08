@@ -1,0 +1,11 @@
+========== Grade ==========
+
+Your score is 98 out of 100
+
+======== Feedback ========
+
+- All tests passed for every data structure
+- Great error handling
+- Nice comments on your code 
+- Not sure how you have gotten your answer to 1C) [-2]
+Grades for student(s): zchen1-dlee4
